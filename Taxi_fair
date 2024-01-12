@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// Function to calculate the total fare
+float calculateFare(float distance) {
+    // Base fare is 40 rupees
+    float baseFare = 40.0;
+
+    // Cost per kilometer is 20 rupees
+    float costPerKm = 20.0;
+
+    // Calculate total fare
+    float totalFare = baseFare + (distance * costPerKm);
+
+    return totalFare;
+}
+
+int main() {
+    float distance;
+
+    // Input the distance from the user
+    printf("Enter the distance in kilometers: ");
+    scanf("%f", &distance);
+
+    // Check if the distance is valid (non-negative)
+    if (distance < 0) {
+        printf("Invalid distance. Distance cannot be negative.\n");
+    } else {
+        // Calculate and display the total fare
+        float totalFare = calculateFare(distance);
+        printf("Total fare for the trip: %.2f rupees\n", totalFare);
+    }
+
+    return 0;
+}
