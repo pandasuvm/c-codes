@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    int c=0;
+    printf("enter the number whose table you want to see: ");
+    scanf("%d",&a);
+    for(int i=a;i<=a*10;i=i+a)
+    {
+       c=c+1;
+        printf("%d * %d = %d \n ",a,c,i);
+       }
+    }
+    
+
+   
