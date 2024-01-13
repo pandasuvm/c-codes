@@ -31,6 +31,7 @@ int main() {
         printf("7. Fibonacci Series\n");
         printf("8. Trigonometric Functions\n");
         printf("9. Reverse a Number\n");
+        printf("10. Multiplication table of n"\n");
         printf("0. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -120,6 +121,24 @@ int main() {
                 printf("Reversed number: %d\n", reverseNumber(num));
                 break;
             }
+            case 10:
+                {
+                    #include<stdio.h>
+
+    int a;
+    int c=0;
+    printf("enter the number whose table you want to see: ");
+    scanf("%d",&a);
+    for(int i=a;i<=a*10;i=i+a)
+    {
+       c=c+1;
+        printf("%d * %d = %d \n ",a,c,i);
+       }
+
+        break;
+    
+
+   
             case 0: {
                 printf("Exiting the program.\n");
                 break;
